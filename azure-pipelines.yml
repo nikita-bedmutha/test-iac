@@ -8,9 +8,9 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-18.04'
-container: qualys/qiac_security_cli:latest
+container: python:latest
 steps:
-- script: echo Hello, world!
+- script: python -v
   displayName: 'Run a one-line script'
 
 - script: |
