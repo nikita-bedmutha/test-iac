@@ -7,8 +7,8 @@ trigger:
 - main
 
 pool:
-  vmImage: aphatangade/qiac_docker_poc
-container: aphatangade/qiac_docker_poc
+  vmImage: qualys/qiac_security_cli:latest
+container: qualys/qiac_security_cli:latest
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
