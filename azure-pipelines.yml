@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: qualys/qiac_security_cli
+  vmImage: 'ubuntu-18.04'
 container: qualys/qiac_security_cli
 steps:
 - script: echo Hello, world!
