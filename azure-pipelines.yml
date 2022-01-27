@@ -8,9 +8,9 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-18.04'
-container: python:latest
+container: nibedmutha10008/dockerhub:nikita_azure_poc
 steps:
-- script: python -v
+- script: python3 --version
   displayName: 'Run a one-line script'
 
 - script: |
