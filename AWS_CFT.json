@@ -1,0 +1,21 @@
+"Resources" : {
+    "RDSCluster": {
+        "Type": "AWS::RDS::DBCluster",
+        "Properties": {
+			"StorageEncrypted" : false,					#CKV_AWS_96
+            "MasterUsername": {
+                "Ref": "username"
+            },
+            "MasterUserPassword": {
+                "Ref": "password"
+            },
+            "Engine": "aurora",
+            "DBSubnetGroupName": {
+                "Ref": "DBSubnetGroup"
+            },
+            "DBClusterParameterGroupName": {
+                "Ref": "RDSDBClusterParameterGroup"
+            }
+        }
+    }
+}
